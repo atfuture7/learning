@@ -1,3 +1,11 @@
+/*
+code from https://www.javaworld.com/article/3104621/android-studio-for-beginners-part-2-explore-and-code-the-app.html
+fixed some resource issue
+built successfully
+under android studio 3.6.1
+date: 20200307
+ */
+
 package com.example.w2a;
 
 import android.app.Activity;
