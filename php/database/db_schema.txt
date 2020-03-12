@@ -1,0 +1,24 @@
+//main: item code
+create table plu (
+	id int auto_increment primary key,
+	plu int, 
+	ename varchar(255),
+	cname varchar(255),
+	type int, 
+	last_update timestamp
+);
+
+//sub: type
+CREATE TABLE `plu_type` (
+  `id` int(11) auto_increment primary key,
+  `id_type` int(11) DEFAULT NULL,
+  `cname` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL
+) 
+
+
+////// record
+// joint search, replace type code with names
+select plu.plu, plu.ename, plu.cname, plu_type.cname 
+from plu 
+inner join plu_type on plu.type = plu_type.id_type
+order by plu.type, plu.plu, last_update;
