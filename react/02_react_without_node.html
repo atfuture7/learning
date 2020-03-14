@@ -1,0 +1,27 @@
+<!-- try to get rid of node server -->
+<!DOCTYPE html>
+<html>
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<body>
+  
+<div id="mydiv"></div>
+
+<script type="text/babel">
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello World!</h1>
+  }
+}
+
+ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+</script>
+
+</body>
+</html>
+<!-- 
+	example from https://www.w3schools.com/react/react_render.asp
+	0314 the codes are exactly the sample file provided.
+	It gave me good ideas of focusing on ReactJS, not meddle with node js service.
+-->

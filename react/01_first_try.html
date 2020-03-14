@@ -1,0 +1,27 @@
+<!-- first try of reactjs -->
+<html>
+	<head>
+		<!-- Load React. v.development -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". 
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>-->
+		<!-- Load React. v.production -->
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	</head>
+	<body>
+		<h1>Test React</h1>
+		
+		<div id="like_button_container"></div>
+		<!-- Load our React component. -->	
+		<script  type="text/babel" src="01_like_button.js"></script>
+	</body>
+
+</html>
+
+<!--
+	sample from https://reactjs.org/docs/add-react-to-a-website.html
+	0313 original version. remove functions not introduced yet. but failed to process JSX.
+	0314 reviced to be server independent. add npm service supported JSX processor babel.min.js 
+-->
