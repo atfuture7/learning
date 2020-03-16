@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+		<style>
+			div.w50 {
+				width: 75%;
+				border: 1px solid black;
+			}
+			p.colorT {
+				color: #33aaDD;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<seldDef id="textFrame"></seldDef>
+		
+		<div class="w50" id='desc' >
+		Local RestJS didn't go much further after I tried to modualize 
+		OO design; browser blocks local request:<br/>
+		<p class="colorT">"Cross origin requests are only supported for 
+		protocol schemes: http, data, chrome"</p>
+		<p class="colorT">CORS policy: Cross origin requests are only 
+		supported for protocol schemes: http, data, chrome, chrome-
+		extension, https.</p>
+		Then I tried to launch NodeJS service to solve this problem, 
+		NodeJS treated all local included files as server main page. <br/><br/>
+		Maybe I can tried to use URL requests to mimic the file structure 
+		of a general server, but, under asynchronous structure, NodeJS 
+		may not process loading files in the same order of usage. 
+		<br /><br/>
+		Furthermore, when I implemented OO design, it is about the same 
+		structure tutorial provided: noteJS, html frame(public/html), main 
+		process (src/app.js), and classes(src/module files)<br /><br/>
+		Alright..... I surrender. Move back to NodeJS-ReactJS single page app.
+		
+		</div>
+		
+		<seldDef id="infoF"></seldDef>
+		
+		<script type="text/javascript"  src='04_renderMain.js'></script>
+		<!-- 
+			module couldn't be used 
+			CORS policy: Cross origin requests are only supported for 
+			protocol schemes: http, data, chrome, chrome-extension, https.
+		-->
+		<script type="text/babel"  src='04_renderMain.js'></script>
+	</body>
+</html>
