@@ -4,7 +4,10 @@ import './index.css';
 import Interview from './Interview.js';
 //import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Interview />, document.getElementById('root'));
+var iRndMax = Math.floor(Math.random() * 10);
+var iRndDem = Math.floor(Math.random() * 4);
+
+ReactDOM.render(<Interview max={iRndMax} demand={iRndDem} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
