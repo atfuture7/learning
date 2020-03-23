@@ -51,7 +51,7 @@ function cbQueryV7(err, resDoc) {
 	console.log("lv5-2 -show result");
 	console.log(resDoc);
 	var db = conn.db(dbName);
-	var objQuery = { style : /er/ } ;
+
 	db.collection('kimetsu').drop( {} ,cbQuery8 );
 	
 }
