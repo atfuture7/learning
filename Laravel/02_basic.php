@@ -55,7 +55,7 @@
 		
 		<?php
 			print("5,8: ".( 5 <=> 8 )."<br>");
-			print("A,chr(0x65): ".( 'A' <=> chr(0x41) )."<br>");
+			print("A,chr(0x41): ".( 'A' <=> chr(0x41) )."<br>");
 			print("noodle, monkey : ".( 'noodle'<=> 'monkey'  )."<br>");
 		?>
 		<hr>
