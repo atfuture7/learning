@@ -1,7 +1,7 @@
 import os, time
 from os import path
 
-path = 'C:\\tmp\\202101\\New folder (2)'
+path = 'F:\\picture\\2023\\2312'
 s_chw = os.getcwd()
 s_prefix = 'life'
 
