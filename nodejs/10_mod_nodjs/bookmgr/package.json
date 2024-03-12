@@ -1,0 +1,11 @@
+{
+  "name": "bookmgr",
+  "version": "1.0.0",
+  "description": "sample to use mongodb and mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jt",
+  "license": "ISC"
+}
