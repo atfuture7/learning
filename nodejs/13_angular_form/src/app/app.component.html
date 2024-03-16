@@ -1,0 +1,17 @@
+
+
+<h1>Test form</h1>
+<form [formGroup]="tsFormDef">
+  <label>Text input</label>
+  <input type="text" id="t_input" formControlName="textInput"/><br/>
+  <label>Radio input</label>
+  <div id="radio_area">
+    <input type="radio" name="radioInput" value="12"  formControlName="radioInput"/>sample line<br/>
+  </div><br/>
+  <label>Select input</label>
+  <select id="s_input" formControlName="selectInput"></select><br/>
+  <label>Textarea input</label>
+  <textarea id="ta_input" formControlName="areaInput"></textarea><br/>
+  <button type="submit" (click)="submitApplication()">Apply now</button>
+</form>
+<p>Message: {{ message }} </p>
