@@ -6,7 +6,10 @@
   <input type="text" id="t_input" formControlName="textInput"/><br/>
   <label>Radio input</label>
   <div id="radio_area">
-    <input type="radio" name="radioInput" value="12"  formControlName="radioInput"/>sample line<br/>
+    <div  *ngFor = "let rItem of radioList" >
+      <input type="radio" value={{rItem}} formControlName="radioInput"/>
+      {{rItem}}
+    </div>
   </div><br/>
   <label>Select input</label>
   <select id="s_input" formControlName="selectInput"></select><br/>
