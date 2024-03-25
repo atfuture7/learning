@@ -1,0 +1,11 @@
+{
+  "name": "mod_story",
+  "version": "1.0.0",
+  "description": "link list of sentences",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_s"
+  },
+  "author": "Jia jia Tang",
+  "license": "ISC"
+}

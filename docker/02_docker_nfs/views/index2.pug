@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  - var bPass = false 
+  #iMax
+    if iMax == -1
+      button(type='button' onclick='sendRefresh()') Refresh
+    else 
+      p SQLight is ready
+      input(type='text' id='newLine' size=40 ) 
+      button(type='button' onclick='sendNewLine(-1)') Add Line 
+            
+  div(id='lineList')  
+

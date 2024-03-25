@@ -1,0 +1,23 @@
+{
+  "name": "240324-ejs-sqlite-docker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "testb": "node ./test/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.19.1",
+    "http-errors": "~1.6.3",
+    "mod_story": "file:mod_story",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "description": "skeleton of expressJS-sqlite-docker",
+  "main": "app.js",
+  "author": "Jia jia Tang",
+  "license": "ISC"
+}
